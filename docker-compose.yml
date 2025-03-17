@@ -1,0 +1,23 @@
+# docker pull apache/sedona:1.7.0
+
+# docker run -e DRIVER_MEM=6g -e EXECUTOR_MEM=8g -p 8888:8888 -p 8080:8080 -p 8081:8081 -p 4040:4040 apache/sedona:latest
+
+# docker run -p 8888:8888 -p 8080:8080 -p 8081:8081 -p 4040:4040 apache/sedona:1.6.0
+
+services:
+  ap_sedona_mov:
+    image: apache/sedona
+    # image: apache/sedona:1.7.0
+    restart: always
+    container_name: ap_sedona_mov
+    environment:
+      - DRIVER_MEM=3g
+      - EXECUTOR_MEM=4g
+    ports:
+      - "8888:8888"
+      - "8080:8080"
+      - "8081:8081"
+      - "4040:4040"
+    volumes:
+      - .:/opt/workspace/tesis_movilidad
+    

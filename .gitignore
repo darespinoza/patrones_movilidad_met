@@ -1,3 +1,6 @@
 venv/
 raw_data/
 shape_data/
+.ipynb_checkpoints/
+documento_LaTeX/
+Pruebas datasets.rar
