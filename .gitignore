@@ -1,5 +1,6 @@
 venv/
 raw_data/
+transformed_data/
 shape_data/
 .ipynb_checkpoints/
 documento_LaTeX/
