@@ -1,6 +1,7 @@
 venv/
 raw_data/
 transformed_data/
+copernicus_era5land_data/
 shape_data/
 .ipynb_checkpoints/
 documento_LaTeX/
